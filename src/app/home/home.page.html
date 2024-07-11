@@ -7,5 +7,6 @@
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  
+  <ion-input maxLength="5" [(ngModel)]="guess"></ion-input>
+  <ion-button [disabled]="guess.length != 5" (click)="submit()">Submit Guess</ion-button>
 </ion-content>
